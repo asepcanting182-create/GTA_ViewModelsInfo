@@ -28,7 +28,7 @@ jobs:
           
     - name: Get GTA:SA structures file (private)...
       run: |
-        git clone https://github.com/RusJJ/GTASAAndroid_Structs.git ./structs
+        git clone https://x-access-token:${{ secrets.PAT }}@github.com/RusJJ/GTASAAndroid_Structs.git ./structs
         mv ./structs/* ./
 
     - name: Get SAUtils...
